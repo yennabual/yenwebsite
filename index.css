@@ -1,0 +1,139 @@
+/*
+	@name index
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1600px; width: 1600px; height: 750px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+
+#page_index_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1600px;
+	height: 750px;
+}
+
+#_bg__index_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1600px;
+	height: 750px;
+	background:rgba(255,255,255,1);
+}
+
+
+#ahha_2 {
+	top: 0px;
+	left: 0px;
+	width: 1600px;
+	height: 750px;
+}
+
+
+
+
+
+#hi_there_ {
+	top: 216px;
+	left: 232px;
+	width: 232.4px;
+	height: 37.4px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32.4px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#i_am_a_web_designer_during_night_time {
+	top: 318px;
+	left: 232px;
+	width: 552.4px;
+	height: 37.4px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32.4px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#___studying_during_daylight_ {
+	top: 369px;
+	left: 232px;
+	width: 550px;
+	height: 36px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 31px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#click_anywhere_to_start_your_journey_ {
+	top: 571px;
+	left: 607px;
+	width: 552px;
+	height: 36px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 31px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#i_am_rhealyn {
+	top: 258px;
+	left: 215px;
+	width: 356.2px;
+	height: 48.2px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 6.4px;
+	color:#000000;
+}
+
+
+#welcome_to_my_personal_website {
+	top: 523px;
+	left: 73px;
+	width: 1420px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 40px;
+	text-align: center;
+	color:#000000;
+}
+
+
+#lol_1 {
+	top: -16px;
+	left: 800px;
+	width: 759px;
+	height: 650px;
+}
+
+
+
+/* Add your custom CSS here */

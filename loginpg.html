@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Login/Register Page</title>
+</head>
+<style>
+    body {
+            margin: 0;
+            padding: 0;
+            background-image: url(skins/love.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: absolute;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+    .container {
+            width: 400px;
+            height: 450px;
+            margin-top: 5%;
+            margin-left: 30%;
+            background-color: rgba(255, 255, 255, 0.662);
+            padding: 70px 90px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            bottom: 60%;
+            left: 70%;
+            opacity: 85%;
+            border: solid 2px;
+            box-shadow: 0px 0px 10px #33a5cb;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: Newsreader;
+            color: black;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10%;
+            
+            
+        }
+        .btn {
+            margin: 10px;
+            padding: 15px 40px; /* Adjust padding as needed */
+            font-size: 15px;
+            border-radius: 10px;
+            font-family: Newsreader;
+            background-color: #d4ecf4;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .btn:hover {
+            background-color: #33a5cb;
+        }
+        .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #33a5cb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+    
+        .back-button i {
+            vertical-align: middle;
+        }
+        .back-button:hover {
+            background-color: #1b5569;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 10px 0;
+            font-family: IBM Plex Mono;
+            font-size: 10px;
+            text-align: center;
+            color: #000000;
+            
+            
+        }
+        .custom-image {
+            width: 300px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 20px;
+            position: relative;
+        }
+</style>
+<body>
+    <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+    <div class="container">
+    <img src="skins/logo.png" alt="Custom Image" class="custom-image">
+    <h2>Login/Register</h2>
+    <button onclick="redirectTo('login.php')" class="btn btn-primary">Login</button><br>
+    <button onclick="redirectTo('registration.php')" class="btn btn-secondary">Register</button>
+
+</div>
+    <footer>
+        <span class="char">%C2%A9 </span> 2024 by Rhealyn Nabual All rights reserved.
+    </footer>
+
+    
+
+
+
+    <script>
+        var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+        function goBack() {
+        window.location.href = "contact.html";
+        }
+
+    </script>
+
+</body>
+</html>

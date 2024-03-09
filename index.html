@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="StyleSheet" href="index.css" />
+	<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(skins/love.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: absolute;
+            align-items: center;
+            justify-content: center;
+            min-height: 200vh;
+            overflow-x: hidden;
+        }
+        /* CSS for navigation bar */
+        header {
+            background-color: #F2F2F2; /* Change background color as needed */
+            padding: 10px 0;
+			border: solid 2px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 50px; /* Adjust spacing between navigation items */
+        }
+        nav ul li:last-child {
+            margin-right: 0; /* Remove right margin for the last navigation item */
+        }
+        nav ul li a {
+            color: black; /* Change text color as needed */
+            text-decoration: none;
+            font-size: 18px; /* Adjust font size as needed */
+			font-family: Montserrat;
+			font-weight: bold;
+        }
+		nav ul li a:hover {
+		color: #33a5cb; /* Change color on hover */
+	}
+    nav ul li a.active {
+            color: #33a5cb; /* Change color of active link */
+            font-weight: bold; /* Make the active link bold */
+        }
+	footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 10px 0;
+            font-family: IBM Plex Mono;
+            font-size: 10px;
+            text-align: center;
+            color: #000000;
+        }
+    </style>
+    
+    <!-- Add your custom HEAD content here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="content-container">
+        <div id="page_index_ek1" nameid="index">
+            <div nameid="index" id="_bg__index_ek2"></div>
+            <img src="skins/love.gif" nameid="ahha 2" id="ahha_2" />
+            
+            <div nameid="Hi there," id="hi_there_">
+                Hi there, 
+            </div>
+            <div nameid="I am a web designer during night time" id="i_am_a_web_designer_during_night_time">
+                I am a web designer during night time
+            </div>
+            <div nameid="&amp; studying during daylight." id="___studying_during_daylight_">
+                &amp; studying during daylight.
+            </div>
+            <div nameid="I AM RHEALYN" id="i_am_rhealyn">
+                I AM RHEALYN
+            </div>
+            <div nameid="WELCOME TO MY PERSONAL WEBSITE" id="welcome_to_my_personal_website">
+                WELCOME TO MY PERSONAL WEBSITE
+            </div>
+            <img src="skins/logo.png" nameid="lol 1" id="lol_1" />
+        </div>
+		<footer>
+			<span class="char">%C2%A9 </span> 2024 by Rhealyn Nabual All rights reserved.
+		</footer>
+    </div>
+	
+    <script>
+    var currentPage = window.location.pathname.split('/').pop();
+
+// Highlight the active navigation link
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll("nav ul li a");
+        links.forEach(function(link) {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+    var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }
+    </script>
+</body>
+</html>

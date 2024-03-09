@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(skins/love.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: absolute;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #F2F2F2; /* Change background color as needed */
+            padding: 10px 0;
+            border: solid 2px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 50px; /* Adjust spacing between navigation items */
+        }
+        nav ul li:last-child {
+            margin-right: 0; /* Remove right margin for the last navigation item */
+        }
+        nav ul li a {
+            color: black; /* Change text color as needed */
+            text-decoration: none;
+            font-size: 18px; /* Adjust font size as needed */
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #33a5cb; /* Change color on hover */
+        }
+        nav ul li a.active {
+            color: #33a5cb; /* Change color of active link */
+            font-weight: bold; /* Make the active link bold */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 10px 0;
+            font-family: IBM Plex Mono;
+            font-size: 10px;
+            text-align: center;
+            color: #000000;
+        }
+        .thumbnails {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            right: 100px;
+            margin-top: 239px; /* Adjust spacing from the top */
+        }
+
+        .thumbnail {
+            text-align: center;
+            margin: 20px;
+            transition: transform 0.3s ease; /* Add transition for smooth movement */
+        }
+
+        .thumbnail img {
+            width: 300px; /* Adjust thumbnail image size */
+            height: 300px; /* Adjust thumbnail image size */
+            border-radius: 10px;
+            margin-bottom: 20px; /* Adjust spacing between thumbnails */
+            border: solid 20px;
+            border-color: #d4ecf4;
+        }
+
+        .thumbnail a {
+            color: #1f6379; /* Change text color as needed */
+            text-decoration: none;
+            font-size: 18px; /* Adjust font size as needed */
+            font-family: Newsreader;
+            font-weight: bold;
+        }
+
+        .thumbnail:hover {
+            transform: translateY(-20px); /* Move the thumbnail up by 10px on hover */
+        }
+
+        .project {
+            position: absolute;
+            font-family: Newsreader;
+            font-size: 40px;
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            top: 10%;
+            padding: 30px;
+            border: solid 2px;
+            left: 38%;
+            letter-spacing: 6px;
+            background-color: white;
+        }
+        .description {
+            position: absolute;
+            bottom: 43%;
+            font-family: Newsreader;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            font-weight:lighter;
+            margin: 200px;
+        }
+        .resume {
+            position: absolute;
+            font-family: Newsreader;
+            font-size: 40px;
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            top: 95%;
+            padding: 30px;
+            border: solid 2px;
+            letter-spacing: 6px;
+            background-color: white;
+        }
+        .description2 {
+            position: absolute;
+            top: 85%;
+            font-family: Newsreader;
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            font-weight:lighter;
+            margin: 200px;
+        }
+        
+        .pdf-button {
+            background-color: #1f6379;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Style for the button hover effect */
+        .pdf-button:hover {
+            background-color: #33a5cb;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="project">
+        PORTFOLIO
+    </div>
+    <div class="description">
+        I've curated a collection that encapsulates my expertise, achievements, and endeavors, providing a detailed snapshot of my works. 
+        Each piece within my portfolio reflects my unique style, creativity, and proficiency, offering a comprehensive overview of my capabilities to potential clients or employers. 
+    </div>
+    
+
+    <div class="thumbnails">
+        <div class="thumbnail">
+            <a class="amobus" href="skins/amobus.pdf" target="_blank">
+                <img src="skins/amobus.png" alt="Thumbnail 1">
+                <div>AMOBUS</div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a class="needahang" href="skins/NEEDAHANGGAME.pdf" target="_blank">
+                <img src="skins/need.png" alt="Thumbnail 2">
+                <div> NEED A HANG
+                </div>
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a class="needahang" href="skins/bbdms.pdf" target="_blank">
+                <img src="skins/blood.png" alt="Thumbnail 3">
+                <div>BLOOD BANK MANAGEMENT SYSTEM</div>
+            </a>
+        </div>
+        <div class="resume">
+            RESUME
+        </div>
+        <div class="description2">
+            As a reflection of my journey and aspirations, my resume stands as a meticulously crafted document, 
+            meticulously tailored to showcase my unique blend of skills, experiences, and ambitions. 
+        </div>
+        <div class="pdf"><a class="pdf-button" href="skins/NabualResume.pdf" target="_blank">View Resume PDF</a></div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <span class="char">%C2%A9 </span> 2024 by Rhealyn Nabual All rights reserved.
+    </footer>
+    <script>
+    var currentPage = window.location.pathname.split('/').pop();
+
+// Highlight the active navigation link
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll("nav ul li a");
+        links.forEach(function(link) {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+    var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }
+
+    </script>
+</body>
+</html>

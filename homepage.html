@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(skins/love.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #F2F2F2; /* Change background color as needed */
+            padding: 10px 0;
+            border: solid 2px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 50px; /* Adjust spacing between navigation items */
+        }
+        nav ul li:last-child {
+            margin-right: 0; /* Remove right margin for the last navigation item */
+        }
+        nav ul li a {
+            color: black; /* Change text color as needed */
+            text-decoration: none;
+            font-size: 18px; /* Adjust font size as needed */
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #33a5cb; /* Change color on hover */
+        }
+        nav ul li a.active {
+            color: #33a5cb; /* Change color of active link */
+            font-weight: bold; /* Make the active link bold */
+        }
+
+        #image-container {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
+            right: 25%;
+        }
+
+        #image-container img {
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50px;
+            border: solid 15px;
+            color: #d4ecf4;
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+            right: 20%;;
+            
+        }
+
+        #image-text {
+            color: black;
+            font-size: 24px;
+            position: absolute; /* Position the text absolutely */
+            top: 60%; /* Align the text vertically in the middle */
+            transform: translate(50%, -50%); /* Adjust horizontal position */
+            left: 70%; /* Align the text to the right side */
+            white-space: nowrap; /* Ensure text is on one line only */
+            overflow: hidden; /* Hide overflowed text */
+            font-family: Newsreader;
+            opacity: 1; /* Set initial opacity to 1 */
+            line-height: 40px;
+            
+        }
+
+
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: #d4ecf4;   
+            background-color: rgba(27, 85, 105, 0.5); /* Adjust opacity here */
+            backdrop-filter: inherit;
+            border-radius: 10px;
+            border: none;
+            padding: 4px 6px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add transition for hover effect */
+        }
+
+        .arrow-button:hover {
+            background-color: rgba(27, 85, 105, 0.8); /* Adjust opacity for hover */
+        }
+
+        #next {
+            right: -50px;
+        }
+
+        #back {
+            left: -50px;
+        }
+        .about-me {
+            font-family: Newsreader;
+            letter-spacing: 5px;
+            font-size: xx-large;
+            position: absolute;
+            top: 210px; /* Adjust top position as needed */
+            right: 30%; /* Align the text to the right side */
+            padding: 30px;
+            border: solid 2px;
+            background-color: #F2F2F2;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 10px 0;
+            font-family: IBM Plex Mono;
+            font-size: 10px;
+            text-align: center;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-me">
+        About me!
+    </div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="image-container">
+        <img src="skins/me.jpg" id="current-image" alt="Current Image" />
+        <div id="image-text" style="opacity: 1;">I'm Rhealyn B. Nabual, You can call me Yen.<br>I'm studying at NU-Fairview and my Program is BSIT 2nd Year.<br>I'm currently surviving our 2nd term Finals,<br>I'm doing my best so I can maintain my DL's.</div>
+        <button id="back" class="arrow-button" onclick="changeImage(-1)">&lt;</button>
+        <button id="next" class="arrow-button" onclick="changeImage(1)">&gt;</button>
+    </div>
+    
+    <footer>
+        <span class="char">%C2%A9 </span> 2024 by Rhealyn Nabual All rights reserved.
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentPage = window.location.href;
+            var links = document.querySelectorAll("nav ul li a");
+            links.forEach(function(link) {
+                if (link.href === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+        var images = [
+            "skins/me.jpg",
+            "skins/cat.jpg",
+            "skins/valo.jpg"
+        ];
+
+        var texts = [
+            "I'm Rhealyn B. Nabual, You can call me Yen.<br>I'm studying at NU-Fairview and my Program is BSIT 2nd Year.<br>I'm currently surviving our 2nd term Finals,<br>I'm doing my best so I can maintain my DL's.",
+            "This is my cat and he's name is Riley.<br>He's my first baby and I'm so thankful because I have him in my life.<br>He's my motivation to be successful so I can buy him<br>whatever he wants.",
+            "This is one of my favorite hobby.<br>Playing Valorant is like my Stress Reliever and my kind of Stress.<br>I'm playing Valorant during night times after stressful coding<br>with my friends and love ones."
+        ];
+
+        var currentIndex = 0;
+        var currentImage = document.getElementById("current-image");
+        var imageText = document.getElementById("image-text");
+        var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }
+
+        function changeImage(change) {
+        currentIndex = (currentIndex + change + images.length) % images.length;
+        currentImage.style.opacity = 0; // Set opacity to 0
+        imageText.style.opacity = 0; // Hide text
+        setTimeout(function() {
+            currentImage.src = images[currentIndex];
+            currentImage.style.opacity = 1; // Set opacity to 1 after changing the image
+            imageText.innerHTML = texts[currentIndex]; // Update text content
+            imageText.style.opacity = 1; // Show text
+        }, 500); // Wait for the transition duration (0.5s)
+    }
+
+    </script>
+</body>
+</html>

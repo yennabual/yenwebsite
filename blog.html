@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(skins/love.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: absolute;
+            align-items: center;
+            justify-content: center;
+            min-height: 200vh;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #F2F2F2; /* Change background color as needed */
+            padding: 10px 0;
+            border: solid 2px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 50px; /* Adjust spacing between navigation items */
+        }
+        nav ul li:last-child {
+            margin-right: 0; /* Remove right margin for the last navigation item */
+        }
+        nav ul li a {
+            color: black; /* Change text color as needed */
+            text-decoration: none;
+            font-size: 18px; /* Adjust font size as needed */
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #33a5cb; /* Change color on hover */
+        }
+        nav ul li a.active {
+            color: #33a5cb; /* Change color of active link */
+            font-weight: bold; /* Make the active link bold */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #F2F2F2;
+            padding: 10px 0;
+            font-family: IBM Plex Mono;
+            font-size: 10px;
+            text-align: center;
+            color: #000000;
+        }
+        .motivation {
+            position: absolute;
+            font-weight: lighter;
+            font-family: Newsreader;
+            font-size: 15px;
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            top: 10%;
+            padding: 18px;
+            border: ridge 2px;
+            left: 46.5%;
+            background-color: white;
+            
+        }
+        .qoutes {
+            font-size: 25px;
+            top: 20%;
+            font-family: Newsreader;
+            padding: 10px;
+            position: absolute;
+            left: 25%;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .letter {
+            font-size: 20px;
+            top: 12%;
+            font-family: Newsreader;
+            position: absolute;
+            margin: 100px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .qoutes2 {
+            font-size: 25px;
+            bottom: 42%;
+            font-family: Newsreader;
+            position: absolute;
+            text-align: center;
+            left: 26%;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .maya {
+            font-size: 15px;
+            bottom: 39%;
+            font-family: Newsreader;
+            position: absolute;
+            text-align: center;   
+            left: 46%; 
+        }
+        .letter2 {
+            font-size: 20px;
+            bottom: 9%;
+            font-family: Newsreader;
+            position: absolute;
+            margin: 100px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .faqs {
+            position: absolute;
+            font-weight: lighter;
+            font-family: Newsreader;
+            font-size: 30px;
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            top: 85%;
+            padding: 18px;
+            border: ridge 2px;
+            left: 46.6%;
+            font-weight: bold;
+            background-color: white;
+        }
+        .faq {
+            margin-bottom: 20px;
+            top: 750px;
+            position: relative;
+            left: 10px;
+        }
+
+        .faq h3 {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-family: Newsreader;
+        text-align: left;
+        border: solid #d4ecf4;
+        padding: 15px;
+        margin-left: 500px;
+        margin-right: 500px;
+        position: relative; /* Add relative positioning */
+        background-color: white;
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #000;
+            position: absolute; /* Change to absolute positioning */
+            right: 10px; /* Adjust the distance from the right side */
+            top: 50%; /* Align to the middle vertically */
+            transform: translateY(-50%); /* Center vertically */
+            transition: transform 0.3s ease;
+        }
+        .faq p {
+            font-size: 16px;
+            font-family: Newsreader;
+            line-height: 1.5;
+            display: none; /* Initially hide answers */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .arrow.rotate {
+            transform: rotate(180deg);
+        }
+        .description{
+            position: absolute;
+            top: 720px;
+            font-family: Newsreader;
+            font-size: 15px;
+            left:17%;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="motivation">
+        MOTIVATION
+    </div>
+    <div class="qoutes">
+        <q>Embracing the Digital Adventure: The Joy of Being an IT Student</q>
+    </div>
+    <div class="letter">
+        Embarking on the thrilling journey of being an IT student feels like entering a digital wonderland where ach corner unfolds new learning adventures. In the words of Steve Jobs, 'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. ' As students, we're not just absorbing information; we're diving into 'Diverse Learning Opportunities,' exploring programming languages, cybersecurity, and AI, finding our passion along the way. 'Innovation and 
+        Creativity' are our trusted companions, pushing us to think beyond code and contribute to the dynamic world of technology.
+    </div>
+    <div class="qoutes2"><q>You may encounter many defeats, but you must not be defeated.</q></div>
+    <div class="maya">- Maya Angelou</div>
+    <div class="letter2">As an IT student, relish every moment of this journey. The late-night coding sessions, the "aha" moments when you crack a complex problem, and the camaraderie with fellow students—these are the memories that will shape your IT adventure. Embrace the joy of learning, 
+        and let the thrill of being an IT student propel you into a future filled with endless possibilities in the world of technology.</div>
+    
+    
+        <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="faqs">FAQ's</div>
+    <div class="description">Discover quick solutions and find answers to common questions right here on my personal website's Frequently Answered Questions about IT program. </div>
+    <div class="faq">
+        <h3 onclick="toggleAnswer(this)">What is a typical day like for an IT student?<span class="arrow"></span></h3>
+        <p>A typical day for an IT student involves attending classes, working on programming assignments or projects, 
+            collaborating with classmates, and staying updated on the latest technology trends.</p>
+    </div>
+    <div class="faq">
+        <h3 onclick="toggleAnswer(this)">How much time do IT students spend on coding and programming assignments?<span class="arrow"></span></h3>
+        <p>The amount of time spent on coding varies, but us students often dedicate a significant portion of time to 
+            programming assignments, especially during project-heavy semesters.</p>
+    </div>
+    <div class="faq">
+        <h3 onclick="toggleAnswer(this)">How do IT students stay updated on the latest technology trends?
+            <span class="arrow"></span></h3>
+        <p>IT students like us stay updated by reading industry blogs, attending events, participating in online forums, 
+            and taking advantage of resources like online courses and tutorials.
+        </p>
+    </div>
+    <div class="faq">
+        <h3 onclick="toggleAnswer(this)">How do IT students handle the pressure of tight deadlines and complex projects?
+            <span class="arrow"></span></h3>
+        <p>We learn to manage stress by breaking down tasks, setting realistic goals, seeking help when needed, 
+            and practicing effective time management is the most important.
+        </p>
+    </div>
+    </div>
+    <div class="faq">
+        <h3 onclick="toggleAnswer(this)">How do IT students stay motivated during challenging periods in their studies?
+            <span class="arrow"></span></h3>
+        <p>We often stay motivated by setting clear goals, seeking support from profs and mentors, 
+            celebrating small victories, and maintaining a passion for technology and problem-solving.
+        </p>
+    </div>
+</div>
+    <footer>
+        <span class="char">%C2%A9 </span> 2024 by Rhealyn Nabual All rights reserved.
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var currentPage = window.location.href;
+        var links = document.querySelectorAll("nav ul li a");
+        links.forEach(function(link) {
+            if (link.href === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+    var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }
+    function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            var arrow = element.querySelector('.arrow');
+
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                arrow.classList.remove('rotate');
+            } else {
+                answer.style.display = 'block';
+                arrow.classList.add('rotate');
+            }
+        }
+    </script>
+</body>
+</html>
